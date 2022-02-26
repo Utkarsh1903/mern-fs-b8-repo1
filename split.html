@@ -14,7 +14,7 @@
             .column {
             float: left;
             /* padding: 10px; */
-            height: 800px; /* Should be removed. Only for demonstration */
+            height: 700px; /* Should be removed. Only for demonstration */
             }
 
             .left {
@@ -31,6 +31,58 @@
             display: table;
             clear: both;
             }
+
+            .left1{
+    display:flex;
+    flex-direction: row;
+}
+.logo{
+    padding: 20px;
+    font-size: 70px;
+}
+.heading1{
+    padding-left: 20px;
+    padding-top:20px;
+    margin-bottom: 20px;
+}
+.signin{
+    
+    margin-right: 55%;
+    border:2px solid #b2beb5;
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-left: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bolder;
+}
+a:link {
+    text-decoration: none;
+}
+.phone{
+    background-color: #1DA1F2;
+    color:blanchedalmond;
+}
+p{
+   
+    padding-left: 20px;
+}
+
+.signin:hover{
+    background-color:#b2beb5;
+}
+.empty{
+    visibility: hidden;
+}
+.phone:hover{
+    background-color: #1E90FF;
+}
+.already{
+    padding-left: 20px;
+    padding-top:20px;
+}
+
+
         * {
             margin: 0;
             padding: 0;
@@ -44,7 +96,7 @@
         .twitter_footer{
             position: absolute;
             padding: 20px 0;
-            background-color: black;
+            
             bottom: 0px;
             width: 100%;
             
@@ -82,13 +134,46 @@
     <div class="row" style="top: 0px;" >
         <div class="column left" >
           
-          <img src="img1.png" alt="" height="800px" width="800px">
+          <img src="img1.png" alt="" height="740px" width="790px">
         </div>
-        <div class="column right" style="background-color: black;">
-          <h2>Column 2</h2>
-          <p>Some text..</p>
+        <div class="column right" >
+            <div style="margin-left: 50px;">
+            <div class="left">
+                <div><ion-icon name="logo-twitter" style="color:#1DA1F2" class="logo"  width="200" height="40"></ion-icon></div>
+            </div>
+            <div class="heading1">
+                <h1>Happening now</h1>
+                
+            </div>
+            <div class="heading1">
+                <h3>Join Twitter today.</h1>
+            </div>
+            <div class="signin">
+                <ion-icon name="logo-google"></ion-icon> Sign up with Google
+            </div>
+            <div class="empty">A</div>
+            <div class="signin">
+                <ion-icon name="logo-apple"></ion-icon><a style="color: black;" href="https://appleid.apple.com/auth/authorize?client_id=com.twitter.twitter.siwa&redirect_uri=https%3A%2F%2Ftwitter.com&response_type=code%20id_token&state=mHyWMEjxBmuC-mDETIpjN981Q8vSLc-JXMpFtQL7_xt&scope=name%20email&response_mode=web_message&frame_id=9f25b560-5860-433d-9627-e48bc91f78d2&m=11&v=1.5.4">Sign up with Apple</a>
+            </div>
+            <div class="empty">A</div>
+            <div class="signin phone" style="margin-bottom: 20px;">
+                <a style="color: blanchedalmond;" href="https://twitter.com/i/flow/signup">Sign up with Phone or Mail</a>
+            </div>
+            <div class="terms" style="margin-right: 50%; font-size: 15px;" >
+                <p>By signing up, you agree to the <a style="color:#1DA1F2" href="https://twitter.com/en/tos">Terms of Service </a>and <a style="color:#1DA1F2" href="https://twitter.com/en/privacy">Privacy Policy</a>, including <a style="color:#1DA1F2" href="https://help.twitter.com/en/rules-and-policies/twitter-cookies">Cookie Use</a>.</p>
+            </div>
+            <div class="already" style="margin-bottom: 20px;">
+                <h2>Already have an account</h2>
+            </div>
+            <div class="signin">
+                <a style="color:#1DA1F2" href="https://twitter.com/i/flow/signup">Sign in</a>
+            </div>
+            
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         </div>
       </div>
+    </div>
       <footer class="twitter_footer">
         <ul class="list">
             <li><a href="">About</a> </li>
