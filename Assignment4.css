@@ -1,0 +1,31 @@
+
+body {
+    margin-left: 150px;
+}
+.first
+{
+    margin-right: 600px;
+    
+    padding-bottom: 15px;
+    border-bottom-style:solid;
+    border-bottom-color:  lightgray;
+    
+}
+.second {
+    margin-right: 600px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom-style:solid;
+    border-bottom-color:  lightgray;
+}
+.light {
+    color: lightgray;
+    font-size: smaller;
+}
+.third {
+    margin-right: 600px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom-style:solid;
+    border-bottom-color:  lightgray;
+}
