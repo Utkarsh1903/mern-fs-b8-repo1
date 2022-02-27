@@ -7,55 +7,99 @@
     <title>Instagran</title>
     <style>
         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-weight: 400;
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                                    }
 
-        }
-        .twitter_footer{
-            position: absolute;
-            padding: 20px 0;
-            background-color: black;
-            bottom: 0px;
-            width: 100%;
-            
-        }
-        .twitter_footer ul
-        {
-            margin-top: 0;
-            padding: 0;
-            list-style: none;
-            font-size: 12px;
-            line-height: 1.5;
-            color: gray;
-            text-align: center;
-        }
+                    body {
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            font-weight: 400;
+                    }
 
-        .twitter_footer ul li {
-            display: inline-block;
-            padding: 0 10px;
+                    .row {
+                        display: flex;
+                        flex-direction: row;
+                    }
 
-        }
-        .twitter_footer ul li a {
-            
-            color: gray;
-        }
-        a{
-            text-decoration:none;
-        }
+                    .left {
+                        width: 50%;
+                    }
 
-        a:hover {
-            text-decoration:underline;
-        }
+                    .right {
+                        width: 50%;
+                    }
+
+                    .row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                    }
+                    .twitter_footer{
+                        position:relative;
+                        padding: 10px 0;    
+                        bottom: 0px;
+                        width: 100%;
+                        
+                    }
+                    .twitter_footer ul
+                    {
+                        margin-top: 0;
+                        padding: 0;
+                        list-style: none;
+                        font-size: 12px;
+                        line-height: 1;
+                        color: gray;
+                        text-align: center;
+                    }
+
+                    .twitter_footer ul li {
+                        display: inline-block;
+                        padding: 0 10px;
+
+                    }
+                    .twitter_footer ul li a {
+                        
+                        color: gray;
+                    }
+                    a{
+                        text-decoration:none;
+                    }
+
+                    a:hover {
+                        text-decoration:underline;
+                    }
+
+                    img {        
+                        max-width: 100%;
+                        object-fit: cover;
+                        vertical-align: bottom;
+                    }
+                    .box {
+                        background-color: #FDFEFF;
+                        height: 350px;
+                        width: 350px;
+                        margin-top: 33%;
+                        margin-right: 50px;
+                        padding-bottom: 30px;
+
+                    }
     </style>
 </head>
 <body style="background-color: #F1F1F1 ;">
+    <div class="row" style="top: 0px;">
+        <div class="column left" >          
+            
+        </div>
+        <div class="column right" >
+            <div class="box"></div>
+            <div class="second" style="padding-top: 10px; width: 350px; height: 80px ; margin-right: 50px; background-color: #FDFEFF;"></div>
+
+        </div>
+
+    </div>
     
-    <footer class="twitter_footer" style="background-color: #F1F1F1 ;">
+    <footer class="twitter_footer" style="background-color: #F1F1F1; position: absolute;">
         <ul class="list">
             <li><a href="https://about.twitter.com/en">Meta</a> </li>
             <li><a href="https://help.twitter.com/en">About</a> </li>
@@ -70,7 +114,7 @@
             <li><a href="https://about.twitter.com/en/who-we-are/brand-toolkit">Location</a></li>
             <li><a href="https://ads.twitter.com/login?ref=gl-tw-tw-twitter-advertise">Instagram Lite</a></li>
         </ul>
-        <ul class="list">
+        <ul class="list" style="padding-top: 10px;">
             <li><a href="https://marketing.twitter.com/en_apac">Dance</a></li>
             <li><a href="https://business.twitter.com/?ref=web-twc-ao-gbl-twitterforbusiness&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=twitterforbusiness">Food & Drink</a></li>
             <li><a href="https://developer.twitter.com/en">Home and Garden</a></li>
